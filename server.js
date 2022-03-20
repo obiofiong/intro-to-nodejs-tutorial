@@ -41,6 +41,9 @@ app.use((req, res) => {
   //   res.status(404).sendFile("./pages/404.html", { root: __dirname });
 });
 
+app.post("/", (req, res) => {
+  console.log(req.body);
+});
 // Informational responses (100–199)
 // Successful responses (200–299)
 // Redirection messages (300–399)
