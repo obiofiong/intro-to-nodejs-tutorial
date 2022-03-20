@@ -6,6 +6,7 @@ const app = express();
 app.set("view engine", "ejs");
 // app.set("views", "./pages");
 
+//get request made to "/" url
 app.get("/", (req, res) => {
   console.log("home page");
   //   res.sendFile("./pages/index.html", { root: __dirname });
@@ -35,6 +36,7 @@ app.get("/about-us", (req, res) => {
   //   res.send("<p>Yo man, what is going on?</p>");
 });
 
+// finfd fifdfbidfndfdin
 app.use((req, res) => {
   //   res.status(404);
   res.status(404).render("index");
